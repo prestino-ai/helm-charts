@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  customer-workflow-helm:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-13T06:04:41.833657062Z"
+    description: A Helm chart for Kubernetes
+    digest: c6eb12a747c29df6786c10d5a579e9c96cd26abfd40226bde80cc3478bfef0df
+    name: customer-workflow-helm
+    type: application
+    urls:
+    - https://github.com/prestino-ai/helm-charts/releases/download/customer-workflow-helm-0.1.0/customer-workflow-helm-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-08-13T06:04:41.833663083Z"

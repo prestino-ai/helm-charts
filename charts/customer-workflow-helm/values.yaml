@@ -119,6 +119,16 @@ volumeMounts: []
 #   mountPath: "/etc/foo"
 #   readOnly: true
 
+# Environment variables to be set in the container
+# Can be overridden using: helm upgrade --set env[0].name=VAR_NAME --set env[0].value=VAR_VALUE
+envs: []
+# - name: DATABASE_URL
+#   value: "postgresql://localhost:5432/mydb"
+# - name: API_KEY
+#   value: "your-api-key"
+# - name: DEBUG
+#   value: "true"
+
 nodeSelector: {}
 
 tolerations: []

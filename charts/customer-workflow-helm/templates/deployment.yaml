@@ -60,16 +60,12 @@ spec:
           volumeMounts:
             {{- toYaml . | nindent 12 }}
           {{- end }}
-          {{- if .Values.env }}
+          {{- if .Values.envs }}
           env:
             {{- range .Values.envs }}
             - name: {{ .name }}
               value: {{ .value | quote }}
             {{- end }}
-          {{- else }}
-          env:
-            - name: Kestrel__Endpoints__http__Url
-              value: "http://0.0.0.0:80"
           {{- end }}
       {{- with .Values.volumes }}
       volumes:
